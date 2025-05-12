@@ -38,7 +38,7 @@ def summarize_url(url):
         return ""
 
 # Step 3: Text Generation using Transformers (basic model for free use)
-summarizer = pipeline("summarization", model="sshleifer/distilbart-cnn-12-6")
+summarizer = pipeline("summarization", model="Falconsai/text_summarization")
 txt_gen = pipeline("text-generation", model="gpt2")
 
 # Step 4: Image Generation (Craiyon fallback with suggestions)
